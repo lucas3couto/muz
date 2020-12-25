@@ -1,7 +1,7 @@
 describe('React-Redux-Saga-Boilerplate', () => {
   it('should assert that <title> is correct', () => {
     cy.visit('http://localhost:3000');
-    cy.title().should('include', 'React Redux Saga Boilerplate');
+    cy.title().should('include', 'Muzme');
   });
 
   it('should be able to start', () => {

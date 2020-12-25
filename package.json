@@ -1,13 +1,13 @@
 {
-  "name": "react-redux-saga-boilerplate",
-  "description": "Boilerplate with React and Redux with Redux Saga",
-  "version": "2019.10.0",
-  "author": "Gil Barbara <gilbarbara@gmail.com>",
+  "name": "muzme",
+  "description": "Starter",
+  "version": "2020.0.0",
+  "author": "Lucas Couto <lucas3couto@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gilbarbara/react-redux-saga-boilerplate"
+    "url": ""
   },
-  "bugs": "https://github.com/gilbarbara/react-redux-saga-boilerplate/issues",
+  "bugs": "",
   "license": "MIT",
   "keywords": [
     "React",
@@ -202,8 +202,7 @@
   "lint-staged": {
     "*.js?(x)": [
       "eslint --fix",
-      "git add",
-      "jest --findRelatedTests"
+      "git add"
     ],
     "*.(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql|mdx)": [
       "prettier --write",
