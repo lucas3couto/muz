@@ -7,6 +7,7 @@ import Collaborators from '../pages/Collaborators';
 import AddCollaborators from '../pages/Collaborators/Add';
 import Courses from '../pages/Courses';
 import Students from '../pages/Students';
+import AddStudents from '../pages/Students/Add';
 
 export default function Routes() {
   return (
@@ -17,6 +18,7 @@ export default function Routes() {
       <Route path="/colaboradores/adicionar" exact component={AddCollaborators} isPrivate />
       <Route path="/cursos" exact component={Courses} isPrivate />
       <Route path="/alunos" exact component={Students} isPrivate />
+      <Route path="/alunos/adicionar" exact component={AddStudents} isPrivate />
     </Switch>
   );
 }
