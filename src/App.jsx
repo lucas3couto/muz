@@ -7,6 +7,7 @@ import config from 'config';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { store, persistor } from './store';
+import Routes from './routes';
 
 const history = createBrowserHistory();
 
@@ -24,7 +25,7 @@ export class App extends React.Component {
             titleAttributes={{ itemprop: 'name', lang: 'pt-br' }}
           />
           <Router history={history}>
-            <div>Teste</div>
+            <Routes />
           </Router>
         </PersistGate>
       </Provider>
