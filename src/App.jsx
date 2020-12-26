@@ -4,7 +4,11 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 import { Helmet } from 'react-helmet-async';
 import config from 'config';
+import { Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import { store, persistor } from './store';
+
+const history = createBrowserHistory();
 
 export class App extends React.Component {
   render() {
@@ -19,7 +23,9 @@ export class App extends React.Component {
             titleTemplate={`%s | ${config.name}`}
             titleAttributes={{ itemprop: 'name', lang: 'pt-br' }}
           />
-          <div>App</div>
+          <Router history={history}>
+            <div>Teste</div>
+          </Router>
         </PersistGate>
       </Provider>
     );
