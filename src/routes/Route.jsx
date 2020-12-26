@@ -1,12 +1,13 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import AuthLayout from 'templates/auth';
 import DefaultLayout from 'templates/default';
 
 const RouteWrapper = ({ component: Component, isPrivate = false, title, ...rest }) => {
-  const signed = useSelector(state => state.auth.signed);
+  const signed = true;
+  // useSelector(state => state.auth.signed);
 
   if (!signed && isPrivate) {
     return <Redirect to="/entrar" />;
@@ -44,10 +45,10 @@ const RouteWrapper = ({ component: Component, isPrivate = false, title, ...rest 
 };
 
 RouteWrapper.propTypes = {
+  children: PropTypes.element.isRequired,
   component: PropTypes.oneOfType([PropTypes.element, PropTypes.func]).isRequired,
   isPrivate: PropTypes.bool,
   title: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
 };
 
 RouteWrapper.defaultProps = {
