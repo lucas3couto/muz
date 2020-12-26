@@ -5,6 +5,8 @@ import { useSelector, useDispatch } from 'react-redux';
 import { collaboratorsListRequest } from 'store/modules/collaborators/actions';
 import Table from 'components/Table';
 import { MdEdit } from 'react-icons/md';
+import Button from 'components/Button';
+import history from 'services/history';
 import { columns } from './columns';
 import * as S from './styled';
 
@@ -49,7 +51,11 @@ const Dashboard = () => {
     <>
       {collaborators.length > 0 && (
         <>
-          <PageHeader title="Colaboradores" />
+          <PageHeader title="Colaboradores">
+            <Button onClick={() => history.push('/colaboradores/adicionar')} secondary>
+              Novo
+            </Button>
+          </PageHeader>
           <Page>
             <Table columns={columns} data={collaborators} />
           </Page>
