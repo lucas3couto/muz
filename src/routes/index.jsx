@@ -15,7 +15,7 @@ export default function Routes() {
       <Route path="/" exact component={Dashboard} isPrivate />
       <Route path="/colaboradores" exact component={Collaborators} isPrivate />
       <Route path="/colaboradores/adicionar" exact component={AddCollaborators} isPrivate />
-      <Route path="cursos" exact component={Courses} isPrivate />
+      <Route path="/cursos" exact component={Courses} isPrivate />
       <Route path="/alunos" exact component={Students} isPrivate />
     </Switch>
   );
