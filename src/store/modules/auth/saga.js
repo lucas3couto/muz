@@ -5,7 +5,6 @@ import api from '../../../services/api';
 import { signInSuccess, signFailure } from './actions';
 
 export function* signIn({ payload }) {
-  console.log('SAGA AUTH');
   try {
     const { email, password } = payload;
 
@@ -44,5 +43,4 @@ export default all([
   takeLatest('persist/REHYDRATE', setToken),
   takeLatest('@auth/SIGN_IN_REQUEST', signIn),
   takeLatest('@auth/SIGN_OUT', signOut),
-  takeLatest('@auth/SIGN_FAILURE', signFailure),
 ]);
