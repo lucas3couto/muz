@@ -1,10 +1,11 @@
-import { takeLatest, call, put, all } from 'redux-saga//effects';
-import history from 'services/history';
-import api from 'services/api';
+import { takeLatest, call, put, all } from 'redux-saga/effects';
+import history from '../../../services/history';
+import api from '../../../services/api';
 
 import { signInSuccess, signFailure } from './actions';
 
 export function* signIn({ payload }) {
+  console.log('SAGA AUTH');
   try {
     const { email, password } = payload;
 
