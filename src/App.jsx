@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet-async';
 import config from 'config';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
+import GlobalStyle from 'styles/global';
 import { store, persistor } from './store';
 import Routes from './routes';
 
@@ -26,6 +27,7 @@ export class App extends React.Component {
           />
           <Router history={history}>
             <Routes />
+            <GlobalStyle />
           </Router>
         </PersistGate>
       </Provider>
