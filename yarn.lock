@@ -1070,7 +1070,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.2.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.6.2", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
   version "7.12.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
   integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
@@ -2608,6 +2608,13 @@ axios@^0.19.2:
   integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
   dependencies:
     follow-redirects "1.5.10"
+
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
+  dependencies:
+    follow-redirects "^1.10.0"
 
 axobject-query@^2.2.0:
   version "2.2.0"
@@ -6423,7 +6430,7 @@ follow-redirects@1.5.10:
   dependencies:
     debug "=3.1.0"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.10.0:
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.1.tgz#5f69b813376cee4fd0474a3aba835df04ab763b7"
   integrity sha512-SSG5xmZh1mkPGyKzjZP8zLjltIfpW32Y5QpdNJyjcfGxK3qo3NDDkZOZSFiGn1A6SclQxY9GzEwAHQ3dmYRWpg==
@@ -7118,7 +7125,7 @@ hex-color-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/hex-color-regex/-/hex-color-regex-1.1.0.tgz#4c06fccb4602fe2602b3c93df82d7e7dbf1a8a8e"
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
-history@^4.10.1, history@^4.9.0:
+history@^4.9.0:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/history/-/history-4.10.1.tgz#33371a65e3a83b267434e2b3f3b1b4c58aad4cf3"
   integrity sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==
@@ -7129,6 +7136,13 @@ history@^4.10.1, history@^4.9.0:
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
     value-equal "^1.0.1"
+
+history@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/history/-/history-5.0.0.tgz#0cabbb6c4bbf835addb874f8259f6d25101efd08"
+  integrity sha512-3NyRMKIiFSJmIPdq7FxkNMJkQ7ZEtVblOQ38VtKaA0zZMW1Eo6Q6W8oDKEflr1kNNTItSnk4JMCO1deeSgbLLg==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -7529,10 +7543,10 @@ immer@1.10.0:
   resolved "https://registry.yarnpkg.com/immer/-/immer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
   integrity sha512-O3sR1/opvCDGLEVcvrGTMtLac8GJ5IwZC4puPrLuRj3l7ICKvkmA0vGuU9OW8mV9WIBRnaxp5GJh9IEAaNOoYg==
 
-immer@^4.0.1:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-4.0.2.tgz#9ff0fcdf88e06f92618a5978ceecb5884e633559"
-  integrity sha512-Q/tm+yKqnKy4RIBmmtISBlhXuSDrB69e9EKTYiIenIKQkXBQir43w+kN/eGiax3wt1J0O1b2fYcNqLSbEcXA7w==
+immer@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.0.tgz#08763549ba9dd7d5e2eb4bec504a8315bd9440c2"
+  integrity sha512-jm87NNBAIG4fHwouilCHIecFXp5rMGkiFrAuhVO685UnMAlOneEAnOyzPt8OnP47TC11q/E7vpzZe0WvwepFTg==
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -12728,14 +12742,14 @@ redux-saga-test-plan@^4.0.0-beta.3:
     object-assign "^4.1.0"
     util-inspect "^0.1.8"
 
-redux-saga@^1.1.1:
+redux-saga@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-1.1.3.tgz#9f3e6aebd3c994bbc0f6901a625f9a42b51d1112"
   integrity sha512-RkSn/z0mwaSa5/xH/hQLo8gNf4tlvT18qXDNvedihLcfzh+jMchDgaariQoehCpgRltEm4zHKJyINEz6aqswTw==
   dependencies:
     "@redux-saga/core" "^1.1.3"
 
-redux@^4.0.4:
+redux@^4.0.4, redux@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.5.tgz#4db5de5816e17891de8a80c424232d06f051d93f"
   integrity sha512-VSz1uMAH24DM6MF72vcojpYPtrTUu3ByVWfPL1nPfVRb5mZVTve5GnNCUV53QM/BZ66xfWrm0CTWoM+Xlz8V1w==
