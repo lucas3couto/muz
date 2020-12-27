@@ -17,8 +17,11 @@ export default function Template({ children }) {
 }
 
 export const Main = styled.div`
-  margin-left: 250px;
   transition: all 0.15s ease;
+
+  @media (min-width: 768px) {
+    margin-left: 250px;
+  }
 `;
 
 Template.propTypes = {

@@ -2,6 +2,7 @@ import React from 'react';
 import Page from 'components/Page';
 import Header from 'components/PageHeader';
 import Card from 'components/Card';
+import styled from 'styled-components';
 import Form from './Form';
 
 export default function Collaborators() {
@@ -9,10 +10,18 @@ export default function Collaborators() {
     <>
       <Header title="Alunos" />
       <Page>
-        <Card style={{ padding: 50 }}>
+        <CardComp>
           <Form />
-        </Card>
+        </CardComp>
       </Page>
     </>
   );
 }
+
+const CardComp = styled(Card)`
+  padding: 20px;
+
+  @media (min-width: 768px) {
+    padding: 50px;
+  }
+`;

@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
   justify-content: center;
   min-height: 100vh;
   background: #172b4d;
+
+  padding: 20px;
 `;
 
 export const Card = styled.div`

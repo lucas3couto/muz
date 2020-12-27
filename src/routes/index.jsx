@@ -12,13 +12,13 @@ import AddStudents from '../pages/Students/Add';
 export default function Routes() {
   return (
     <Switch>
-      <Route path="/entrar" exact component={SignIn} />
-      <Route path="/" exact component={Dashboard} isPrivate />
-      <Route path="/colaboradores" exact component={Collaborators} isPrivate />
-      <Route path="/colaboradores/adicionar" exact component={AddCollaborators} isPrivate />
-      <Route path="/cursos" exact component={Courses} isPrivate />
-      <Route path="/alunos" exact component={Students} isPrivate />
-      <Route path="/alunos/adicionar" exact component={AddStudents} isPrivate />
+      <Route path="/entrar" component={SignIn} />
+      <Route exact path="/" component={Dashboard} isPrivate />
+      <Route exact path="/colaboradores" component={Collaborators} isPrivate />
+      <Route path="/colaboradores/adicionar" component={AddCollaborators} isPrivate />
+      <Route exact path="/cursos" component={Courses} isPrivate />
+      <Route exact path="/alunos" component={Students} isPrivate />
+      <Route path="/alunos/adicionar" component={AddStudents} isPrivate />
     </Switch>
   );
 }

@@ -7,7 +7,6 @@ export const Aside = styled.div`
   display: block;
   overflow-y: auto;
   width: 100%;
-  max-width: 62px;
   padding-right: 0;
   padding-left: 0;
   background-color: #fff !important;
@@ -18,7 +17,11 @@ export const Aside = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  max-width: 250px !important;
+  max-width: 0px;
+
+  @media (min-width: 768px) {
+    max-width: 250px !important;
+  }
 `;
 
 export const Scroll = styled.div`
