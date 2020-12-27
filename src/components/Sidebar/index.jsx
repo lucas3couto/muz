@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import * as S from './styled';
 import { menu } from './menu';
+import PropTypes from 'prop-types'
 
-export default function Sidebar() {
+export default function Sidebar({ open }) {
   return (
-    <S.Aside>
+    <S.Aside open={open} >
       <S.Scroll>
         <S.Header />
         <S.Content>
@@ -23,4 +24,8 @@ export default function Sidebar() {
       </S.Scroll>
     </S.Aside>
   );
+}
+
+Sidebar.propTypes = {
+  open: PropTypes.bool
 }

@@ -4,7 +4,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 import { Helmet } from 'react-helmet-async';
 import config from 'config';
-import { Router } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import GlobalStyle from 'styles/global';
 import { store, persistor } from './store';
@@ -25,10 +25,10 @@ export class App extends React.Component {
             titleTemplate={`%s | ${config.name}`}
             titleAttributes={{ itemprop: 'name', lang: 'pt-br' }}
           />
-          <Router history={history}>
+          <BrowserRouter>
             <Routes />
             <GlobalStyle />
-          </Router>
+          </BrowserRouter>
         </PersistGate>
       </Provider>
     );

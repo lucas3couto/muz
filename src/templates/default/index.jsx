@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Sidebar from '../../components/Sidebar';
 import Navbar from '../../components/Navbar';
 
 export default function Template({ children }) {
+
+  const [open, setOpen] = useState(false)
+
   return (
     <div>
-      <Sidebar />
+      <Sidebar open={open} />
       <Main>
-        <Navbar />
+        <Navbar handleOpen={() => setOpen(!open)} />
         {children}
       </Main>
     </div>

@@ -19,6 +19,12 @@ export const Aside = styled.div`
   justify-content: space-between;
   max-width: 0px;
 
+  @media(max-width: 768px){
+    ${({ open }) => open && `
+      max-width: 250px;
+    `}
+  }
+
   @media (min-width: 768px) {
     max-width: 250px !important;
   }

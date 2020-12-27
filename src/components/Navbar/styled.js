@@ -9,3 +9,12 @@ export const Navbar = styled.div`
   height: 80px;
   align-items: center;
 `;
+
+export const Menu = styled.div`
+  display: block;
+  font-size: 30px;
+  color: #32325d;
+  @media(min-width: 768px){
+    display: none;
+  }
+`
